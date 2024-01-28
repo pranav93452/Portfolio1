@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="/logo.png" alt="img" class="logo">
+                <ul>
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#about">ABOUT ME</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Full Stack Developer</p>
+                <h1>Hello, I'am <span>Pranav</span><br>jadhav from India.</h1>
+            </div>
+        </div>
+
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-c1">
+                    <img src="/user.jpg">
+                </div>
+                <div class="about-c2">
+                    <h1 class="sub">About Me</h1>
+                    <p style="font-size:17px">Passionate web developer and third-year student at Sona College of Technology, with a keen interest in crafting seamless and innovative digital experiences. Proficient in a variety of web technologies and languages, I bring a blend of creative design and
+                        robust development skills to every project. Committed to staying at the forefront of emerging trends in web development, I aim to contribute fresh and dynamic solutions 
+                        to the ever-evolving digital landscape.
+                    </p>
+                    <div class="tab-titles">
+                        <div class="tab-links active-links" onclick="opentab('skills')">Skills</div>
+                        <div class="tab-links" onclick="opentab('projects')">Certifications</div>
+                        <div class="tab-links" onclick="opentab('education')">Education</div>
+                    </div>
+                    <div class="tab-contents active-contents" id="skills">
+                        <ul>
+                            <li><span>Web Developer</span><br>Expertise in html,css,javascript.<br></li>
+                            <li><span>Problem Solving</span><br>Expertise in problem solving.<br></li>
+                            <li><span>App developer</span><br>Andriod app developer.<br></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents " id="projects">
+                        <ul>
+                            <li><span>NPTEL-Programming in java <a href="#"><i class="fas fa-external-link-alt"></i></a></span><br><a href="#"></a></li>
+                            <li><span>Courseera-Data Analyst <a href="#"><i class="fas fa-external-link-alt"></i></a></span><br><a href="#"></a></li>
+                            <li><span>NPTEL-Software Testing <a href="#"><i class="fas fa-external-link-alt"></i></a></span><br><a href="#"></a></li>
+                            <li><span>Cisco Packet Tracer <a href="#"><i class="fas fa-external-link-alt"></i></a></span><br><a href="#"></a></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>10th School</span><br>Completed in SRK Matric Hr Sec School with 91%.<br></li>
+                            <li><span>12th School</span><br>Completed in SRK Matric Hr Sec School with 94%.<br></li>
+                            <li><span>B.E CSE</span><br>Completed in Sona College Of Technology with 93%.<br></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Works</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="/work-1.png" alt="">
+                <div class="layer">
+                    <h3>House Rental System</h3>
+                    <p>This is a web application for managing house rents,reviews and complaints. This system helpful for both the owners and tenants. </p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="/work-2.png" alt="">
+                <div class="layer">
+                    <h3>Diet Plan</h3>
+                    <p>This is a App for preparing diet charts for especially diabetics patient.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="/work-3.png" alt="">
+                <div class="layer">
+                    <h3>Student Attendance Management System</h3>
+                    <p>This is a web application for managing student attendance.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div> 
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> pranavjadhav.21cse@sonatech.ac.in</p>
+                <p><i class="fas fa-phone-square-alt"></i>9345268568</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/PranavJadhav07"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.facebook.com/PranavJadhav07"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://www.facebook.com/PranavJadhav07"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/PranavJadhav07"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copuright 0 Pranav. Made with <i class="fas fa-heart"></i> by myself</p>
+    </div>
+</div>
+
+
+
+
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname)
+    {
+        for(tablink of tablinks)
+        {
+            tablink.classList.remove("active-links");
+        }
+        for(tabcontent of tabcontents)
+        {
+            tabcontent.classList.remove("active-contents");
+        }
+        event.currentTarget.classList.add("active-links");
+        document.getElementById(tabname).classList.add("active-contents");
+    }
+</script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyQ15DtlufF3ZFC2ZA5b2cVujE2baQ7YD73maDUTv77w6pcE-vSfCwi9pXM2rjXTfoh/exec';
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
